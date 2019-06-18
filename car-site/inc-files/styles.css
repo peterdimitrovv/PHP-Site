@@ -1,0 +1,117 @@
+#top{
+	width: 100%;
+	height: 80px;
+	margin: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background: black;
+	border-bottom: 2px solid #bb3333;
+	color: #ff0000;
+}
+#left{
+	width: 9%;
+	float: left;
+	min-height: auto;
+	padding-top: 3px;
+	margin: 6px;
+}
+#content{
+	width: 90%;
+	min-height: 400px;
+	padding-top: 6px;
+	float: left;
+}
+#bottom{
+	width: 100%;
+	float: left;
+	border-top: 2px solid #bb3333;
+	background: black;
+	color: #ff0000;
+}
+
+a:link{
+	color: #ff0000;
+}
+
+a:visited{
+	color: #ff0000;
+}
+
+a:active{
+	color: #ff0000;
+}
+
+.errMsg{
+	color: red;
+}
+
+#logo{
+	width: 120px;
+	float: left;
+}
+ #container{
+ 	padding: 6px;
+ }
+
+ .fa {
+  padding: 20px;
+  font-size: 50px !important;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.navbar{
+	background-color: black;
+	color: #ff0000;
+}
+
+#container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  font-size: 5em;
+  color: red;
+  font-weight: bold;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 20px;
+  width: 55%;
+  height:30%;
+  padding-top: 35px;
+}
+
+#insertCar{
+	background-color: black;
+	border-radius: 20px;
+	color: red;
+}
+
+h4{
+	text-align: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .centered{
+  	font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .centered{
+  	font-size: 3em;
+  }
+}

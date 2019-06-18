@@ -1,0 +1,44 @@
+<div id="container">
+
+<div id="top" align="right"><img id="logo" src="pictures/cleveland-auto-show-car-logo-png-25.png">
+
+
+</div>
+
+	<nav class="navbar navbar-expand-lg">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pictures.php">Pictures</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="list_cars.php">List of cars<span class="sr-only"></span></a>
+      </li>
+      <?php
+			if(isset($_SESSION["username"]))
+				if($_SESSION["usertype"] == 1)
+		{?>
+		<li><a class="nav-link" href="insert_car.php">Add new car</a></li>
+		<li><a class="nav-link" href="logout.php">Logout</a></li>
+		<?php } ?>
+    </ul>
+    <?php
+
+	if (!isset($_SESSION["username"]))
+	{?>
+	<form action="login.php" method="post">
+	Usernname: <input type="text" name="username" value="admin"> Password: <input type="password" name="passwd" value="admin">
+	<input type="submit" value="Login">&nbsp;
+	</form>
+	<?php }
+	else 
+	echo $_SESSION["personname"]. " &nbsp;";
+?>
+    
+  </div>
+</nav>
+</div>
